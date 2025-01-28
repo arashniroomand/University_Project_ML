@@ -1,0 +1,45 @@
+@keyframes colorChange {
+    0% { color: #ff7f50; }
+    25% { color: #6495ed; }
+    50% { color: #7fff00; }
+    75% { color: #ff69b4; }
+    100% { color: #ff7f50; }
+}
+.cool-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    animation: colorChange 5s infinite;
+}
+.stApp {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+.stButton button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100%;
+}
+.stButton button:hover {
+    background-color: #45a049;
+}
+.sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
