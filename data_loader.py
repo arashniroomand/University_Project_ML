@@ -1,10 +1,9 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-def load_data():
+def load_data(file_path):
     """Load and preprocess the dataset."""
-    url = "https://raw.githubusercontent.com/justmarkham/DAT8/master/data/sms.tsv"
+    url = file_path
     df = pd.read_csv(url, sep='\t', header=None, names=['label', 'text'])
     df['label'] = df['label'].map({'spam': 1, 'ham': 0})
     return df
